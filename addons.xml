@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.live.streams"
+       name="LiveStreams"
+       version="1.0.9"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simple.downloader" version="0.9.1"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreams</summary>
+    <description>It's up to you ;-) As an alternative to .strm files this add-on lets you add streams by adding items to an xml file. Thus giving you a nice list with thumbnails, fanart, and media info if you like.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="plugin.video.pelisalacarta"
+    name="pelisalacarta"
+    version="3.2.69"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano, Portugués y Francés.</description>
+    <summary lang="en">Movies and TV Shows on demand (Spanish)</summary>
+    <description lang="en">Spanish plugin for watching Movies and TV Shows on demand. It uses more than 70 different source sites that provide streamed media contents</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="1.8.5.3"
+  name="SportsDevil"
+  provider-name="MaxMustermann">
+  <requires>
+   <import addon="xbmc.python" version="2.0"/>
+   <import addon="script.common.plugin.cache" version="0.9.1"/>
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="3.3.19"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">This plugin lets you watch inside XBMC full lenght episodes published on the TV channel websites.</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="xbmc.service" library="service_subscription.py" start="login|startup">
+  </extension>
+</addon>
+
+
+<addon id="repository.gtfamily" name="GTFAMILY REPO" version="1.0" provider-name="GTFAMILY">
+	<extension point="xbmc.addon.repository" name="GTFAMILY Addon Repository">
+		<info compressed="false">http://github.com/gtfamily/gtfamily/raw/master/addons.xml</info>
+		<checksum>http://github.com/gtfamily/gtfamily/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://github.com/gtfamily/gtfamily/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install MY Addons</summary>
+		<description>Download and install addons from GTFAMILY.......For OFFICIAL !! Support Visit XBMCHUB.COM</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
